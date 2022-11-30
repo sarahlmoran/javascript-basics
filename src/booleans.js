@@ -47,7 +47,7 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
+  return char=== string.charAt(0);
 };
 
 function containsVowels(string) {
