@@ -51,11 +51,17 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  // your code here
+
 };
 
+//return string.includes ('a')|| string.includes ('O');
+
+// return Boolean(!string.match(/[aeiou]/g));
+
+ //return string === string.match(/[aeiou]/g);
+
 function isLowerCase(string) {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {
