@@ -51,8 +51,17 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
+if (string.match(/[aeiou]/gi)){
+  return true;
+}
+
+return false;
 
 };
+
+//if (string.match(/[aeiou]/gi)) {
+ // return true;
+//}
 
 //return string.includes ('a')|| string.includes ('O');
 
