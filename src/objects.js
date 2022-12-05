@@ -49,8 +49,19 @@ const averageAge = people => {
 //return people.reduce((total,item)=> total + item);
 
 const createTalkingPerson = (name, age) => {
-  // your code here
-};
+
+}
+  //return {
+    //name: name,
+    //age: age,
+    //introduce: ?
+    //}
+//(a,b) => a. b.
+  //return 'Hi, ' + b.name + 'my name is, ' + a.name + 'and I am, ' + a.age + '!';
+//};
+
+// (a,b)=> a. b.
+//return strings.sort((a,b)=> a.charCodeAt(a.length-1)- b.charCodeAt(b.length-1));
 
 module.exports = {
   createPerson,
