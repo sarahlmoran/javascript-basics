@@ -46,8 +46,9 @@ const onlyEven = numbers => {
 //%2===0
 
 const removeNthElement2 = (index, array) => {
-  return array.filter(array => [...array ] !== index);
+  return array.filter ((item,itemIndex) => itemIndex !== index);
 }
+//return array.filter(array => [...array ] !== index);
 //return array.filter(array => array.splice(index,1));
 //return array.filter(array => [...array] === index);
 
