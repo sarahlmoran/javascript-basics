@@ -41,11 +41,17 @@ return cars.filter(cars => cars.manufacturer === 'Honda');
 };
 
 const averageAge = people => {
-  people.reduce((acc,val)=> {
-    return acc + (val.age/length);
+  const totalAge = people.reduce ((prevAge, currentPerson) => {
+    return prevAge + currentPerson.age;
   }, 0);
+
+  return totalAge/people.length
 };
 
+
+//people.reduce((acc,val)=> {
+  //return acc + (val.age/length);
+//}, 0);
 //return people.reduce((total,item)=> total + item);
 
 const createTalkingPerson = (name, age) => {
