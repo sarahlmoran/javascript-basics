@@ -6,6 +6,12 @@ const getNthElement = (index, array) => {
  
 };
 
+//const getNthElement = (index, array) => {
+  //const newIndex = index < array.length ? index : index - array.length;
+
+  //return array[newIndex];
+//};
+
 const arrayToCSVString = array => {
   return array.join();
 };
@@ -30,6 +36,8 @@ const numbersToStrings = numbers => {
   return numbers.map(String);
 };
 
+//const numbersToStrings = (numbers) => numbers.map(number => String(number));
+
 const uppercaseWordsInArray = strings => {
   return strings.map(strings => strings.toUpperCase());
 };
@@ -41,9 +49,9 @@ const reverseWordsInArray = strings => {
 //return strings.map(strings => [...strings].reverse().join('')); for special characters
 
 const onlyEven = numbers => {
-  return numbers.filter(numbers => numbers%2===0)
+  return numbers.filter(number => number%2===0)
 };
-//%2===0
+
 
 const removeNthElement2 = (index, array) => {
   return array.filter ((item,itemIndex) => itemIndex !== index);
@@ -62,15 +70,23 @@ const removeSpaces = string => {
   return string.replace(/\s/g,'');
 };
 
+//const removeSpaces = (string) => string.split(' ').join('');
+
 const sumNumbers = numbers => {
-return numbers.reduce((total,item)=> total + item);
+ return numbers.reduce((total,item)=> total + item);
 };
 
-//return numbers.reduce(numbers => )
+
 
 const sortByLastLetter = strings => {
   return strings.sort((a,b)=> a.charCodeAt(a.length-1)- b.charCodeAt(b.length-1));
 };
+
+//const sortByLastLetter = (strings) => {
+  //const reverseString = (item) => item.split('').reverse().join('');
+  
+  //return strings.map(reverseString).sort().map(reverseString);
+//};
 
 module.exports = {
   getNthElement,

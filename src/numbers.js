@@ -38,6 +38,8 @@ function quotient (a, b) {
   return Math.trunc(a/b);
 }
 
+//const quotient = (a, b) => (a - (a % b)) / b;
+
 function remainder (a, b) {
   return a%b;
 }

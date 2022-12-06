@@ -14,9 +14,13 @@ function none(a, b) {
   return !a&&!b;
 };
 
+//const none = (a, b) => !(a || b);
+
 function one(a, b) {
   return a!=b;
 };
+
+//const one = (a, b) => (a || b) && !(a && b);
 
 function truthiness(a) {
  return Boolean(a);
@@ -59,15 +63,11 @@ return false;
 
 };
 
-//if (string.match(/[aeiou]/gi)) {
- // return true;
-//}
-
-//return string.includes ('a')|| string.includes ('O');
-
-// return Boolean(!string.match(/[aeiou]/g));
-
- //return string === string.match(/[aeiou]/g);
+//const containsVowels = string => {
+  //return string
+   // .split("")
+    //.some(letter => ["a", "e", "i", "o", "u"].includes(letter.toLowerCase()));
+//};
 
 function isLowerCase(string) {
   return string === string.toLowerCase();
